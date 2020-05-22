@@ -1,0 +1,54 @@
+/* By: Brittany Price */
+@media print {
+  body{
+    font-family: "Times New Roman", Times, serif;
+    background-color: white;
+    color: black;
+    width: auto;
+  }
+
+  h1{
+    display: none;
+  }
+
+  header{
+    font-family: "American Typewriter", "Times New Roman", serif;
+    font-weight: normal;
+  }
+
+  h2{
+    font-family: "American Typewriter", "Times New Roman", serif;
+    font-weight: lighter;
+    font-size: 180%;
+    margin: 0;
+    padding: 0;
+  }
+
+  dt,dd{
+    font-family: "American Typewriter", "Times New Roman", serif;
+    font-weight: lighter;
+  }
+
+  nav{
+    display: none;
+  }
+
+  #date{
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+  }
+
+  footer{
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    text-shadow: none;
+  }
+
+  #printButton{
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    background-color: white;
+    background-image: none;
+    text-shadow: none;
+  }
+}

@@ -1,0 +1,665 @@
+  /* By: Brittany Price */
+/* Make sure the non-content elements are hidden */
+head, title, meta, script, link, style, base {
+    display: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+/* Default styling for emphasis and strong elements */
+/* emphasis {
+    font-style: italic;
+} */
+
+
+strong {
+    font-weight: bold;
+}
+
+
+#date{
+  border: 2px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  clear: both;
+  margin: 0;
+  padding: 1em  1.875%; /*15px/16px 15px/800px */
+  background-image: -webkit-linear-gradient(45deg, white 0%, blue 25%, black 100%);
+  background-image: -moz-linear-gradient(45deg, white 0%, blue 25%, black 100%);
+  background-image: -o-linear-gradient(45deg, white 0%, blue 25%, black 100%);
+  background-image: linear-gradient(45deg, white 0%, blue 25%, black 100%);
+}
+
+/* Style the text */
+@font-face{
+  font-family: sans-serif;
+  src:url("Herculanum.ttf");
+}
+
+body {
+	width: 94%;/*960px  */
+	max-width: 1024px;
+
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*selector*/
+header{
+  /* declaration*/
+  font-family: Herculanum, Arial, sans-serif;/*property: value */
+  font-size: 1.88em;
+  padding: 1em 0.03%;
+  text-align: center;
+}
+
+h1{
+    font-family: Herculanum, Arial,sans-serif;
+    left: 25%;
+    text-align: center;
+    float: none;
+}
+
+h2{
+  color: black;
+  font-family: Herculanum, Arial, sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 1em;
+}
+
+h3{
+  font-family: Herculanum, Arial, sans-serif;
+  text-align: center;
+  font-weight: bolder;
+}
+
+img{
+  image-resolution: 600dpi;
+  image-rendering: smooth;
+  /* centers the image */
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+  border: 1px solid black;
+  min-width: 45%;/* px/960 * 100 */
+  max-width: 50%;/* px/960 * 100 */
+}
+
+img alt{
+  color: black;
+  font-family: Herculanum, Arial, sans-serif;
+  text-align: center;
+}
+
+#waterTribe img{
+  image-resolution: 900dpi;
+  image-rendering: smooth;
+  /* centers the image */
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+  border: 1px solid black;
+  min-width: 45%;/* px/960 * 100 */
+  max-width: 50%;/* px/960 * 100 */
+}
+
+#techniques img{
+  image-resolution: 600dpi;
+  image-rendering: smooth;
+  /* centers the image */
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  border: 1px solid black;
+  min-width: 50%;/* px/960 * 100 */
+  max-width: 100%;/* px/960 * 100 */
+  margin-bottom: 1em;
+}
+
+#slide{
+  margin: auto;
+  width: 60%;
+  height: 450px;
+  min-width: 25%;
+  max-width: 100%;
+}
+
+/*Add for slide show */
+section #slides img {
+	display:none;
+}
+
+#AangImg{
+  margin-top: 1em;
+  width: 50%;
+  height: 300px;
+  min-width: 25%;
+  max-width: 50%;
+}
+
+#KataraImg{
+  width: 30%;
+  height: 300px;
+  min-width: 25%;
+  max-width: 50%;
+}
+
+#SokkaImg{
+  margin-top: 1em;
+  width: 80%;
+  height: 200%;
+  min-width: 50%;
+  max-width: 100%;
+}
+
+#TophImg{
+  width: 30%;
+  height: 400px;
+  min-width: 25%;
+  max-width: 50%;
+}
+
+#world{
+  margin-bottom: 1em;
+}
+
+nav{
+  margin-bottom: 1em;
+  margin-top: 1em;
+  color: black;
+  font-size: 1.25em;/* 20/16  */
+  font-family: Herculanum, Arial, sans-serif;
+  text-align: center;
+}
+
+nav ul{
+  border: none;
+	display: flex;
+	justify-content: center;
+  list-style-type: none;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul ::after{
+	content: "";
+	display: flex;
+	clear: both;
+}
+
+nav ul li{
+  float: left;
+  padding: 0;
+  margin: 0;
+
+  width: 16%; /* was 205px */
+}
+
+nav ul li a{
+  font-size: smaller;
+  padding: .7em 0;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  /* width: 205px; */
+  background-color: blue;
+  color: white;
+  border: 1.5px solid black;
+}
+
+/* nav ul li a img{
+  border: 1px solid black;
+} */
+
+nav ul li a:hover, nav ul li a:focus {
+	background-color: gray;
+}
+
+nav ul ul{
+ border: none;
+ display: none; /*hide to start*/
+ position: relative;
+ top: 0%;
+}
+
+nav ul li:hover > ul{
+	display: block;
+  border: none;
+}
+
+nav ul ul li {
+	float: none;
+  margin: 0;
+  width: 100%;
+}
+
+#intro{
+    padding: .9375em  1.875%; /*15px/16px 15px/800px */
+    margin-top: 1em;
+    /* centers the image */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 450px;
+    min-width: 50%;
+    max-width: 100%;
+    border: none;
+}
+
+details{
+  display: block;
+  margin-top: 2em;
+}
+
+
+section{
+  font-family: Herculanum, Arial, sans-serif;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  padding: 0.5em 0.25%;
+  margin-left: -2.75em;
+}
+
+summary{
+  font-size: 2.0em;
+  font-family: Herculanum, Arial, sans-serif;
+}
+
+dl{
+    font-family: Herculanum, Arial, sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+dt{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+#necklace{
+  image-resolution: 2500dpi;
+  image-rendering: smooth;
+  border: 1px solid black;
+
+  margin-top: 1em;
+  /* centers the image */
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 450px;
+  min-width: 50%;
+  max-width: 100%;
+}
+#genocide{
+  image-resolution: 1000dpi;
+  image-rendering: smooth;
+  border: 1px solid black;
+
+  margin-top: 1em;
+  /* centers the image */
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 450px;
+  min-width: 50%;
+  max-width: 100%;
+}
+
+#temple, #palace, #harbor, #firelord{
+  image-resolution: 3000dpi;
+  image-rendering: smooth;
+  border: 1px solid black;
+
+  margin-top: 1em;
+  /* centers the image */
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 350px;
+  min-width: 50%;
+  max-width: 100%;
+}
+
+figcaption{
+  margin-top: 1em;
+}
+
+p{
+  font-size: 1.0em;
+  margin-left: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* table, th, td{
+  margin-top: 1em;
+  margin-left: 1.25em;
+  border: 1px solid black;
+  position: relative;
+} */
+
+th,td{
+  margin-top: 1em;
+  margin-left: -1.0em;
+  border: 1px solid black;
+  position: relative;
+  width:50%;
+  min-width: 50%;/* px/960 * 100 */
+  max-width: 75%;/* px/960 * 100 */
+}
+table{
+  margin: 1em auto;
+  border: 1px solid black;
+  position: relative;
+  width:50%;
+  min-width: 50%;/* px/960 * 100 */
+  max-width: 75%;/* px/960 * 100 */
+}
+
+table img{
+  /* centers the image */
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /* originally 100px by 300px*/
+  position: relative;
+  border: 1px solid black;
+  min-width: 45%;/* px/960 * 100 */
+  max-width: 50%;/* px/960 * 100 */
+}
+
+caption{
+  margin-bottom: 1em;
+  font-weight: bold;
+  font-size: 1.25em;
+  font-weight: bolder;
+}
+
+section img{
+  margin-left: 5.25em;
+  /* centers the image */
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  /* originally 100px by 300px*/
+  position: relative;
+  border: 1px solid black;
+  min-width: 50%;/* px/960 * 100 */
+  max-width: 100%;/* px/960 * 100 */
+}
+
+section dt{
+  font-size: 2.0em;
+}
+
+section dd{
+  margin-top: 1em;
+  margin-left: 1.5em;
+}
+
+
+footer{
+  border: 2px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  clear: both;
+  padding: .9375em  1.875%; /*15px/16px 15px/800px */
+  text-shadow: 2px 2px black;
+  background-image: -webkit-linear-gradient(45deg, black 0%, blue 25%, white 100%);
+  background-image: -moz-linear-gradient(45deg, black 0%, blue 25%, white 100%);
+  background-image: -o-linear-gradient(45deg, black 0%, blue 25%, white 100%);
+  background-image: linear-gradient(45deg, black 0%, blue 25%, white 100%);
+}
+
+#printButton{
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  clear: both;
+  padding: .9375em  1.875%; /*15px/16px 15px/800px */
+  text-shadow: 2px 2px black;
+  background-image: -webkit-linear-gradient(45deg, black 0%, blue 25%, white 100%);
+  background-image: -moz-linear-gradient(45deg, black 0%, blue 25%, white 100%);
+  background-image: -o-linear-gradient(45deg, black 0%, blue 25%, white 100%);
+  background-image: linear-gradient(45deg, black 0%, blue 25%, white 100%);
+}
+
+
+@media only screen and (max-width: 767px){
+  header, h1, header h2, header h3{
+		font-size:  120%;
+    font-family: Herculanum, Arial, sans-serif;
+	}
+
+	body{
+		font-size: 90%;
+		box-shadow: none;
+    font-family: Herculanum, Arial, sans-serif;
+	}
+
+	nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+		width: 40%;
+    padding: 0 30%;/*1 em for top/bottom & 2.5% for left & right*/
+		/* float: left; */
+    font-family: Herculanum, Arial, sans-serif;
+	}
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200%;
+  }
+
+	nav ul ul{
+    width: 120%;
+		position: relative;
+	}
+
+	nav ul li{
+		width: 50%;
+	}
+
+  section{
+    font-family: Herculanum, Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    padding: 0.5em 0.25%;
+    margin-left: -2.75em;
+  }
+
+  figcaption{
+    margin-top: 1em;
+  }
+
+  p{
+    font-size: 1.0em;
+    margin-left: 2.0em;
+  }
+
+  dd{
+    padding-left: 5%;
+  }
+
+  th,td{
+    margin-top: 1em;
+    /* margin-left: -1.0em; */
+    border: 1px solid black;
+    position: relative;
+    width:50%;
+    min-width: 50%;/* px/960 * 100 */
+    max-width: 75%;/* px/960 * 100 */
+  }
+  table{
+
+    margin: 1em auto;
+    border: 1px solid black;
+    position: relative;
+    width:50%;
+    min-width: 50%;/* px/960 * 100 */
+    max-width: 75%;/* px/960 * 100 */
+  }
+
+  table img{
+    /* centers the image */
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* originally 100px by 300px*/
+    position: relative;
+    border: 1px solid black;
+    min-width: 45%;/* px/960 * 100 */
+    max-width: 50%;/* px/960 * 100 */
+  }
+
+  caption{
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.25em;
+    font-weight: bolder;
+  }
+
+  img{
+    /* centers the image */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    /* originally 100px by 300px*/
+
+    border: 1px solid black;
+    min-width: 45%;/* px/960 * 100 */
+    max-width: 100%;/* px/960 * 100 */
+  }
+
+  /*Add for slide show */
+  section #slides img {
+  	display:none;
+  }
+}
+
+@media only screen and (max-width: 479px){
+  #date{
+      margin-left: -0.2em;
+  }
+
+	header, h1, header h2, header h3{
+		font-size:  120%;
+    font-family: Herculanum, Arial, sans-serif;
+	}
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200%;
+    font-family: Herculanum, Arial, sans-serif;
+  }
+
+	nav ul ul{
+    width: 120%;
+		position: relative;
+	}
+
+  section{
+    font-family: Herculanum, Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    padding: 0.5em 0.5%;
+    /* margin-left: -2.75em; */
+  }
+
+  figcaption{
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+
+  p{
+    font-size: 1.0em;
+    margin-left: 2.0em;
+  }
+
+  dd{
+    padding-left: 10%;
+  }
+
+  th,td{
+    margin-top: 1em;
+    margin-left: -1.0em;
+    border: 1px solid black;
+    position: relative;
+    width:50%;
+    min-width: 50%;/* px/960 * 100 */
+    max-width: 75%;/* px/960 * 100 */
+  }
+  table{
+    margin-top: 1em;
+    margin-left: 2.5em;
+    border: 1px solid black;
+    position: relative;
+    width:50%;
+    min-width: 50%;/* px/960 * 100 */
+    max-width: 75%;/* px/960 * 100 */
+  }
+
+  table img{
+    /* centers the image */
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    /* originally 100px by 300px*/
+    position: relative;
+    border: 1px solid black;
+    min-width: 50%;/* px/960 * 100 */
+    max-width: 75%;/* px/960 * 100 */
+  }
+
+  caption{
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.25em;
+    font-weight: bolder;
+  }
+
+  img{
+    /* centers the image */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    /* originally 100px by 300px*/
+
+    border: 1px solid black;
+    min-width: 45%;/* px/960 * 100 */
+    max-width: 100%;/* px/960 * 100 */
+  }
+
+  /*Add for slide show */
+  section #slides img {
+  	display:none;
+  }
+}
